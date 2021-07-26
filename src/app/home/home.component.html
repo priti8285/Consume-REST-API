@@ -1,0 +1,49 @@
+
+<a  title="Click here"  routerLink="/posts">post</a>  
+<div class="container">  
+    <h1> Display Data from Json __by_dist</h1>  
+
+      <table class="table table-striped">  
+      <thead>  
+          <tr>  
+            <th>ID</th>  
+            <th>Name</th>  
+            <th>brewery_type</th>  
+            <th>country</th>
+            <th>county_province </th>  
+           <th>city</th>
+           <th>created_at</th> 
+           <th>latitude</th>
+           <th>longitude</th>
+           <th>phone</th>
+           <th>website_url</th>
+          <th>obdb_id</th>  
+          <th>postal_code</th>  
+          <th>street</th>  
+           <th>updated_at</th> 
+          </tr>  
+      </thead>  
+      <tbody>  
+        <tr *ngFor="let post of response">  
+          <td>{{ post.id }}</td>  
+          <td>{{ post.name }}</td>  
+          <td>{{ post.brewery_type}}</td> 
+          <td>{{ post.city}}</td> 
+          <td>{{ post.country}}</td> 
+          <td>{{ post.county_province}}</td> 
+          <td>{{ post.created_at}}</td> 
+          <td>{{ post.latitude}}</td> 
+          <td>{{post.longitude}}</td>
+          <td>{{post.phone}}</td>
+          <td>{{post.website_url}}</td>
+           <td>{{ post.obdb_id }}</td> 
+           <td>{{ post.postal_code }}</td>  
+           <td>{{ post.street }}</td>  
+           <td>{{ post.updated_at }}</td>  
+
+           </tr>  
+      </tbody>  
+    </table>  
+  </div>  
+
+  
